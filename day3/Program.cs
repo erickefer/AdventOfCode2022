@@ -2,18 +2,26 @@
 int totalSum = 0;
 
 using (StreamReader reader = new StreamReader("input.txt")){
-    string readLine;
+    string? readLine;
     while((readLine = reader.ReadLine()) != null){
-        Console.WriteLine($"{readLine} + {readLine.Length}");
-        int half = readLine.Length/2;
-        string firstHalf = readLine.Substring(0, half);
-        string secondHalf = readLine.Substring(half, half);
-        Console.WriteLine($"{firstHalf} . {secondHalf}");
-        string duplicates = getDuplicates(firstHalf, secondHalf);
-        for (int j = 0; j<duplicates.Length; j++){
-            int currentPriority = getPriority(duplicates[j]);
-            Console.WriteLine($"Current Priority: {currentPriority}"); 
-            totalSum += currentPriority;
+        Console.WriteLine($"{readLine}");
+        //int half = readLine.Length/2;
+        //string firstHalf = readLine.Substring(0, half);
+        //string secondHalf = readLine.Substring(half, half);
+        //Console.WriteLine($"{firstHalf} . {secondHalf}");
+        //string duplicates = getDuplicates(firstHalf, secondHalf);
+        string? secondLineGroup = reader.ReadLine();
+        string? thirdLineGroup = reader.ReadLine();
+        
+        for (int j = 0; j<readLine.Length; j++){
+            if (secondLineGroup != null && thirdLineGroup != null) {
+                if (secondLineGroup.Contains(readLine[j]) && thirdLineGroup.Contains(readLine[j])){
+                    Console.WriteLine($"Found badge {readLine[j]}");
+                    int currentPriority = getPriority(readLine[j]);
+                    totalSum += currentPriority;
+                    j = readLine.Length;
+                }
+            }
         }
     }
     Console.WriteLine($"Total: {totalSum}");
