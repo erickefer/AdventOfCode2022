@@ -1,0 +1,15 @@
+/Users/erickefer/dev/AdventOfCode2022/day6/obj/Debug/net6.0/day6.csproj.AssemblyReference.cache
+/Users/erickefer/dev/AdventOfCode2022/day6/obj/Debug/net6.0/day6.GeneratedMSBuildEditorConfig.editorconfig
+/Users/erickefer/dev/AdventOfCode2022/day6/obj/Debug/net6.0/day6.AssemblyInfoInputs.cache
+/Users/erickefer/dev/AdventOfCode2022/day6/obj/Debug/net6.0/day6.AssemblyInfo.cs
+/Users/erickefer/dev/AdventOfCode2022/day6/obj/Debug/net6.0/day6.csproj.CoreCompileInputs.cache
+/Users/erickefer/dev/AdventOfCode2022/day6/bin/Debug/net6.0/day6
+/Users/erickefer/dev/AdventOfCode2022/day6/bin/Debug/net6.0/day6.deps.json
+/Users/erickefer/dev/AdventOfCode2022/day6/bin/Debug/net6.0/day6.runtimeconfig.json
+/Users/erickefer/dev/AdventOfCode2022/day6/bin/Debug/net6.0/day6.dll
+/Users/erickefer/dev/AdventOfCode2022/day6/bin/Debug/net6.0/day6.pdb
+/Users/erickefer/dev/AdventOfCode2022/day6/obj/Debug/net6.0/day6.dll
+/Users/erickefer/dev/AdventOfCode2022/day6/obj/Debug/net6.0/refint/day6.dll
+/Users/erickefer/dev/AdventOfCode2022/day6/obj/Debug/net6.0/day6.pdb
+/Users/erickefer/dev/AdventOfCode2022/day6/obj/Debug/net6.0/day6.genruntimeconfig.cache
+/Users/erickefer/dev/AdventOfCode2022/day6/obj/Debug/net6.0/ref/day6.dll
