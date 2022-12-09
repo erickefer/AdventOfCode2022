@@ -27,6 +27,7 @@ using (StreamReader reader = new StreamReader("input.txt")){
 }
 Console.WriteLine(totalCount);
 
+/*
 bool checkOverlappingSections(int firstMin, int firstMax, int secondMin, int secondMax){
     //check first includes second
     bool firstSecond = false;
@@ -38,12 +39,8 @@ bool checkOverlappingSections(int firstMin, int firstMax, int secondMin, int sec
     if (firstSecond || secondFirst) result = true;
     return result;
 }
-
-/*
-....1111....
-..1111......
-..11111111..
 */
+
 bool checkIfOverlapExists (int firstMin, int firstMax, int secondMin, int secondMax) {
     bool result = false;
     if (firstMin >= secondMin && firstMin <= secondMax) result = true;
