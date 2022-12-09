@@ -12,6 +12,7 @@ using (StreamReader reader = new StreamReader("input.txt")){
     string? line;
     while((line = reader.ReadLine())!= null){
         if (line != "" && !reachedOperations){
+            //some change
             line = line.Replace("    "," a");
             line = line.Replace("   "," ").Trim();
             var lineSplit = line.Split(' ');
