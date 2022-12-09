@@ -14,7 +14,8 @@ using (StreamReader reader = new StreamReader("input.txt")){
         int secondGroupMax = Int32.Parse(secondGroupSplit[1]);
         //Console.WriteLine($"{firstGroupMin} {firstGroupMax} {secondGroupMin} {secondGroupMax}");
 
-        bool result = checkOverlappingSections(firstGroupMin,firstGroupMax,secondGroupMin,secondGroupMax);
+        //bool result = checkOverlappingSections(firstGroupMin,firstGroupMax,secondGroupMin,secondGroupMax);
+        bool result = checkIfOverlapExists(firstGroupMin, firstGroupMax, secondGroupMin, secondGroupMax);
 
         if (result) {
             totalCount++;
@@ -35,5 +36,19 @@ bool checkOverlappingSections(int firstMin, int firstMax, int secondMin, int sec
     //check second includes first
     if (secondMin <= firstMin && firstMin <= secondMax && firstMax <= secondMax) secondFirst = true;
     if (firstSecond || secondFirst) result = true;
+    return result;
+}
+
+/*
+....1111....
+..1111......
+..11111111..
+*/
+bool checkIfOverlapExists (int firstMin, int firstMax, int secondMin, int secondMax) {
+    bool result = false;
+    if (firstMin >= secondMin && firstMin <= secondMax) result = true;
+    if (firstMax >= secondMin && firstMax <= secondMax) result = true;
+    if (secondMin >= firstMin && secondMin <= firstMax) result = true;
+    if (secondMax >= firstMin && secondMax <= firstMax) result = true;
     return result;
 }
