@@ -12,20 +12,9 @@ using (StreamReader reader = new StreamReader("input.txt")){
     string? line;
     while((line = reader.ReadLine())!= null){
         if (line != "" && !reachedOperations){
-            //Console.WriteLine(line);
             line = line.Replace("    "," a");
             line = line.Replace("   "," ").Trim();
-            //Console.WriteLine(line);
             var lineSplit = line.Split(' ');
-            //Console.WriteLine(lineSplit[0]);
-            //Console.WriteLine(lineSplit.Length);
-            /*
-            if(!listInitialized) {
-                stacks = new List<string>[lineSplit.Length];
-                listInitialized = true;
-            }
-            */
-            //stacks[0].Insert(0,"test");
             
             for(int i = 0; i<lineSplit.Length; i++){
                 if (lineSplit[i] != "a")
